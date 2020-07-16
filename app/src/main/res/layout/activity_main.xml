@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FFFFFF">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/logo"
+                    android:layout_marginRight="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Med-Ai"
+                    android:textSize="35sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="#171717"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="15dp"/>
+            </LinearLayout>
+            <EditText
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:id="@+id/nameEditText"
+                android:hint="Email"
+                android:textColorHint="#1E1D1D"
+                android:inputType="text"
+                android:textSize="16sp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rounded_edittext"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="15dp"
+                android:alpha="0.8"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email must be like: medai@example.com"
+                android:textColor="#ED4040"
+                android:textSize="11sp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"/>
+            <EditText
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:id="@+id/passEditText"
+                android:hint="Password"
+                android:textColorHint="#1E1D1D"
+                android:inputType="textPassword"
+                android:textSize="16sp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rounded_edittext"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="15dp"
+                android:alpha="0.8"/>
+
+            <Button
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:text="Log In"
+                android:textSize="15sp"
+                android:textColor="#302E2E"
+                android:background="@drawable/loginbutton"
+                android:id="@+id/loginButton"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
